@@ -95,7 +95,9 @@
   <ItemGroup>
     <Content Include="CambiarContraseña.aspx" />
     <Content Include="Confirmar.aspx" />
-    <Content Include="Inicio.aspx" />
+    <Content Include="Inicio.aspx">
+      <BrowseToURL>localhost:50984/Inicio.aspx</BrowseToURL>
+    </Content>
     <Content Include="Registro.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
