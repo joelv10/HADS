@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="HADS18-villalobosConnectionString-Web.config Connection String" description="HADS18-villalobosConnectionString Cadena de conexión que usa la aplicación en web.config para obtener acceso a la base de datos." defaultValue="Data Source=tcp:hads18-villalobos.database.windows.net,1433;Initial Catalog=HADS18-villalobos;User ID=villalobos@hads18-villalobos;Password=G4py5BAi" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\joel\\source\\repos\\Lab2\\WebApplication2\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='HADS18-villalobosConnectionString']/@connectionString" />
+  </parameter>
+</parameters>
