@@ -24,7 +24,11 @@
         <br />
         <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="SqlDataSource1" DataTextField="codigo" DataValueField="codigo" AutoPostBack="True">
         </asp:DropDownList>
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:HADS18-villalobosConnectionString %>" SelectCommand="SELECT Asignaturas.codigo FROM Asignaturas INNER JOIN GruposClase ON Asignaturas.codigo = GruposClase.codigoasig INNER JOIN ProfesoresGrupo ON GruposClase.codigo = ProfesoresGrupo.codigogrupo WHERE (ProfesoresGrupo.email = 'vadillo@ehu.es' )"></asp:SqlDataSource>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:HADS18-villalobosConnectionString %>" SelectCommand="SELECT Asignaturas.codigo from Asignaturas INNER JOIN GruposClase ON Asignaturas.codigo = GruposClase.codigoasig INNER JOIN ProfesoresGrupo ON GruposClase.codigo = ProfesoresGrupo.codigogrupo WHERE (ProfesoresGrupo.email = @email)">
+            <SelectParameters>
+                <asp:SessionParameter Name="email" SessionField="usuario" />
+            </SelectParameters>
+        </asp:SqlDataSource>
         <br />
         <br />
         <asp:Button ID="Button1" runat="server" Text="INSERTAR NUEVA TAREA" />

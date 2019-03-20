@@ -29,4 +29,8 @@ Public Class InsertarTarea
         Response.Redirect("http://hads18-villalobos.azurewebsites.net/Inicio.aspx")
         Session.Abandon()
     End Sub
+
+    Protected Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        Response.Redirect("http://hads18-villalobos.azurewebsites.net/TareasProfesor.aspx")
+    End Sub
 End Class
