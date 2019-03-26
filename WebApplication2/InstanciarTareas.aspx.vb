@@ -32,7 +32,7 @@ Public Class InstanciarTareas
         rowMbrs("HEstimadas") = TextBox3.Text
         rowMbrs("HReales") = TextBox4.Text
         tblMbrs.Rows.Add(rowMbrs)
-        Label7.Text = "Añadida cuenta en la tabla: " + TextBox1.Text
+        Label7.Text = "Tarea instanciada: " + TextBox1.Text
         Label7.Visible = True
         GridView1.DataSource = tblMbrs
         GridView1.DataBind()

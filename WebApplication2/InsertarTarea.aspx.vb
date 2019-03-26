@@ -2,6 +2,7 @@
 
 Public Class InsertarTarea
     Inherits System.Web.UI.Page
+    Dim conClsf As New SqlConnection(“Server=tcp:hads18-villalobos.database.windows.net,1433;Initial Catalog=HADS18-villalobos;Persist Security Info=False;User ID=villalobos;Password=G4py5BAi;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;")
     Dim dapMbrs As New SqlDataAdapter()
     Dim dstMbrs As New DataSet
     Dim tblMbrs As New DataTable
@@ -11,7 +12,13 @@ Public Class InsertarTarea
     End Sub
 
     Protected Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Dim email = Session("usuario")
+        dapMbrs = New SqlDataAdapter("select * from TareasGenericas", conClsf)
+        Dim bldMbrs As New SqlCommandBuilder(dapMbrs)
+        dapMbrs.Fill(dstMbrs, "tareas")
         tblMbrs = dstMbrs.Tables("tareas")
+        Session("datos") = dstMbrs
+        Session("adaptador") = dapMbrs
         Dim rowMbrs As DataRow = tblMbrs.NewRow()
         rowMbrs("Codigo") = TextBox1.Text
         rowMbrs("Descripcion") = TextBox2.Text
@@ -32,5 +39,9 @@ Public Class InsertarTarea
 
     Protected Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
         Response.Redirect("http://hads18-villalobos.azurewebsites.net/TareasProfesor.aspx")
+    End Sub
+
+    Protected Sub SqlDataSource1_Selecting(sender As Object, e As SqlDataSourceSelectingEventArgs) Handles SqlDataSource1.Selecting
+
     End Sub
 End Class
