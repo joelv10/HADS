@@ -97,7 +97,9 @@
     <Content Include="Alumno\InstanciarTareas.aspx" />
     <Content Include="Profesor\Profesor.aspx" />
     <Content Include="Profesor\TareasProfesor.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Alumno\Alumno.aspx" />
     <Content Include="Alumno\TareasAlumno.aspx" />
     <Content Include="Profesor\importar.aspx" />
@@ -209,7 +211,9 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
-    <Content Include="Profesor\Web.config" />
+    <Content Include="Profesor\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="Profesor\Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
