@@ -25,9 +25,17 @@ Public Class Inicio
             If (accesoBD.estaConfirmado(TextBox1.Text, encriptarcontra(TextBox2.Text))) Then
                 If (accesoBD.esAlumno(TextBox1.Text)) Then
                     System.Web.Security.FormsAuthentication.SetAuthCookie("alumno", False)
+                    Application("numAlumnos") = Application("numAlumnos") + 1
+                    Dim listaAlumnos = Application("alumnos")
+                    listaAlumnos.Items.Add(TextBox1.Text)
+                    Application("alumnos") = listaAlumnos
                     Response.Redirect("http://hads18-villalobos.azurewebsites.net/Alumno.aspx?user=" & TextBox1.Text)
                 Else
                     System.Web.Security.FormsAuthentication.SetAuthCookie("profesor", False)
+                    Application("numProfesores") = Application("numProfesores") + 1
+                    Dim listaProfesores = Application("profesores")
+                    listaProfesores.Items.Add(TextBox1.Text)
+                    Application("profesores") = listaProfesores
                     Response.Redirect("http://hads18-villalobos.azurewebsites.net/Profesor.aspx?user=" & TextBox1.Text)
                 End If
 
