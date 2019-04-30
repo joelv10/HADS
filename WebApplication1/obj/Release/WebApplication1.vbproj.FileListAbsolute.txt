@@ -16,3 +16,5 @@ C:\Users\joel\source\repos\Lab2\WebApplication1\bin\ClassLibrary1.xml
 C:\Users\joel\source\repos\Lab2\WebApplication1\bin\ClassLibrary2.pdb
 C:\Users\joel\source\repos\Lab2\WebApplication1\bin\ClassLibrary2.xml
 C:\Users\joel\source\repos\Lab2\WebApplication1\obj\Release\WebApplication1.vbproj.CopyComplete
+C:\Users\joel\source\repos\Lab2\WebApplication1\bin\WebApplication1.XmlSerializers.dll
+C:\Users\joel\source\repos\Lab2\WebApplication1\obj\Release\WebApplication1.XmlSerializers.dll

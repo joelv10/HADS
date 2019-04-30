@@ -39,4 +39,8 @@
         System.Web.Security.FormsAuthentication.SignOut()
         Response.Redirect("http://hads18-villalobos.azurewebsites.net/Inicio.aspx")
     End Sub
+
+    Protected Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Response.Redirect("http://hads18-villalobos.azurewebsites.net/coordinador.aspx")
+    End Sub
 End Class

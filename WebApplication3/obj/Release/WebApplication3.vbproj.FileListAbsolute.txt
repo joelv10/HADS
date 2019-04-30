@@ -1,0 +1,11 @@
+C:\Users\joel\source\repos\Lab2\WebApplication3\bin\WebApplication3.dll.config
+C:\Users\joel\source\repos\Lab2\WebApplication3\bin\WebApplication3.dll
+C:\Users\joel\source\repos\Lab2\WebApplication3\bin\WebApplication3.pdb
+C:\Users\joel\source\repos\Lab2\WebApplication3\bin\WebApplication3.xml
+C:\Users\joel\source\repos\Lab2\WebApplication3\obj\Release\WebApplication3.vbprojAssemblyReference.cache
+C:\Users\joel\source\repos\Lab2\WebApplication3\obj\Release\WebApplication3.Resources.resources
+C:\Users\joel\source\repos\Lab2\WebApplication3\obj\Release\WebApplication3.vbproj.GenerateResource.cache
+C:\Users\joel\source\repos\Lab2\WebApplication3\obj\Release\WebApplication3.vbproj.CoreCompileInputs.cache
+C:\Users\joel\source\repos\Lab2\WebApplication3\obj\Release\WebApplication3.dll
+C:\Users\joel\source\repos\Lab2\WebApplication3\obj\Release\WebApplication3.xml
+C:\Users\joel\source\repos\Lab2\WebApplication3\obj\Release\WebApplication3.pdb

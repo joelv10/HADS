@@ -47,6 +47,8 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web.DynamicData" />
@@ -92,6 +94,14 @@
     <Content Include="App_Data\HAS.xml" />
     <Content Include="App_Data\SEG.xml" />
     <Content Include="App_Data\XSLTFile.xsl" />
+    <None Include="Connected Services\dedicaciones\ServicioWeb.disco" />
+    <None Include="Connected Services\dedicaciones\configuration91.svcinfo" />
+    <None Include="Connected Services\dedicaciones\configuration.svcinfo" />
+    <None Include="Connected Services\dedicaciones\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <Content Include="coordinador.aspx" />
     <Content Include="exportar.aspx" />
     <Content Include="Global.asax" />
     <Content Include="InsertarTarea.aspx" />
@@ -106,6 +116,18 @@
     <Content Include="importar.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Connected Services\dedicaciones\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="coordinador.aspx.designer.vb">
+      <DependentUpon>coordinador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="coordinador.aspx.vb">
+      <DependentUpon>coordinador.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="exportar.aspx.designer.vb">
       <DependentUpon>exportar.aspx</DependentUpon>
     </Compile>
@@ -197,10 +219,12 @@
     <None Include="App_Data\tareas.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Connected Services\dedicaciones\ServicioWeb.wsdl" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
     </None>
+    <Content Include="My Project\DataSources\System.Data.DataSet.datasource" />
     <None Include="My Project\PublishProfiles\HADS18-villalobos - Web Deploy.pubxml" />
     <None Include="My Project\PublishProfiles\WebApplication220190319102145 - Web Deploy.pubxml" />
     <None Include="My Project\Settings.settings">
@@ -217,6 +241,12 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\dedicaciones\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

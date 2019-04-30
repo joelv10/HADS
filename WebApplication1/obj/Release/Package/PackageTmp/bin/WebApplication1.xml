@@ -343,6 +343,24 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
+<member name="F:WebApplication1.Registro._ScriptManager1">
+<summary>
+Control ScriptManager1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebApplication1.Registro._UpdatePanel1">
+<summary>
+Control UpdatePanel1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
 <member name="F:WebApplication1.Registro._Label2">
 <summary>
 Control Label2.
@@ -540,6 +558,36 @@ Control Label7.
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
+</member>
+<member name="T:WebApplication1.esVip.Matriculas">
+<remarks/>
+</member>
+<member name="M:WebApplication1.esVip.Matriculas.#ctor">
+<remarks/>
+</member>
+<member name="E:WebApplication1.esVip.Matriculas.comprobarCompleted">
+<remarks/>
+</member>
+<member name="M:WebApplication1.esVip.Matriculas.comprobar(System.String)">
+<remarks/>
+</member>
+<member name="M:WebApplication1.esVip.Matriculas.comprobarAsync(System.String)">
+<remarks/>
+</member>
+<member name="M:WebApplication1.esVip.Matriculas.comprobarAsync(System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:WebApplication1.esVip.Matriculas.CancelAsync(System.Object)">
+<remarks/>
+</member>
+<member name="T:WebApplication1.esVip.comprobarCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:WebApplication1.esVip.comprobarCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:WebApplication1.esVip.comprobarCompletedEventArgs.Result">
+<remarks/>
 </member>
 </members>
 </doc>

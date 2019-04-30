@@ -20,3 +20,4 @@ C:\Users\joel\source\repos\Lab2\WebApplication2\obj\Release\WebApplication2.vbpr
 C:\Users\joel\source\repos\Lab2\WebApplication2\obj\Release\WebApplication2.dll
 C:\Users\joel\source\repos\Lab2\WebApplication2\obj\Release\WebApplication2.xml
 C:\Users\joel\source\repos\Lab2\WebApplication2\obj\Release\WebApplication2.pdb
+C:\Users\joel\source\repos\Lab2\WebApplication2\bin\WebApplication1.XmlSerializers.dll
